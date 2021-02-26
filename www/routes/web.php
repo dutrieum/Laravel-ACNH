@@ -22,6 +22,10 @@ Route::get('/bugs', function() {
    return view('bugs');
 });
 
+Route::get('/bugs/{$id}', function() {
+   return view('bug');
+});
+
 Route::get('/bugs', [BugController::class, 'bugs']);
 
 Route::get('/bugs/{id}', [BugController::class, 'bug']);
