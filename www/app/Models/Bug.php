@@ -15,7 +15,9 @@ class Bug extends Model
         'rarity',
         'catch-phrase',
         'availability-month',
-        'availability-time'
+        'availability-time',
+        'icon',
+        'image'
     ];
 
 }

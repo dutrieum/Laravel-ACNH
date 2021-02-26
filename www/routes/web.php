@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BugController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/bugs', function() {
+   return view('bugs');
+});
+
+Route::get('/bugs', [BugController::class, 'bugs']);
+
+Route::get('/bugs/{id}', [BugController::class, 'bug']);
