@@ -32,7 +32,7 @@ class BugController extends Controller
         //dd($response);
       }
 
-      return view('bugs', [
+      return view('pages.bugs', [
         'response' => $response
       ]);
     }
@@ -76,7 +76,7 @@ class BugController extends Controller
         ];
       }
 
-      return view('bug', [
+      return view('pages.bug', [
         'response' => $response,
         'months' => $months
       ]);
