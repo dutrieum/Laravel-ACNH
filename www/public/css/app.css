@@ -87,6 +87,37 @@ table {
   font-family: "Arvo", serif;
   font-size: 24px;
 }
+.bugs .multiple div img {
+  height: 100px;
+}
+
+.bug {
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+  padding: 0 100px;
+}
+.bug h1 {
+  font-size: 42px;
+  text-align: center;
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  margin: 30px;
+}
+.bug .content {
+  justify-content: center;
+  display: flex;
+}
+.bug .content .image {
+  height: 600px;
+}
+.bug .content .data {
+  align-self: center;
+}
+.bug .content .data p {
+  font-size: 24px;
+  padding-bottom: 20px;
+  line-height: 22pt;
+}
 
 body {
   background-image: url(/images/background.png?f7741bd2c5fcbd6897515e1e01f700ae);
