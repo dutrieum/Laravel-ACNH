@@ -1,5 +1,6 @@
 @extends('layout.head')
 @section('content')
+<section class="bug">
   <h1>{{ ucfirst($response->name->{'name-EUen'}) }}</h1>
   <div>
     <img src="{{ $response->image_uri }}" height="300px" alt="{{ $response->name->{'name-EUen'} }} image">
@@ -23,4 +24,5 @@
     @endforeach
     </p>
   </div>
+</section>
 @endsection

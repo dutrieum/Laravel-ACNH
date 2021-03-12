@@ -1,12 +1,16 @@
 @extends('layout.head')
 @section('content')
+<section class="bugs">
   <h1>Bug guide</h1>
-  @foreach ($response as $row)
-    <div>
-      <p>Name : {{ ucfirst($row->name->{'name-EUen'}) }}</p>
-      <img src="{{ $row->icon_uri }}" height=100px alt="{{ $row->name->{'name-EUen'} }} icon">
-      <p>Price : {{ $row->price }} bells</p>
-      <p>Rarity : {{ $row->availability->rarity }}</p>
-    </div>
-  @endforeach
+  <div class="multiple">
+    @foreach ($response as $i=>$row)
+      <div>
+        <h2>{{ ucfirst($row->name->{'name-EUen'}) }}</h2>
+        <a href="{{ route('bug',['id'=>$i]) }}"><img src="{{ $row->icon_uri }}" height="100" alt="{{ $row->name->{'name-EUen'} }} icon"></a>
+        <p>Price : {{ $row->price }} bells</p>
+        <p>Rarity : {{ $row->availability->rarity }}</p>
+      </div>
+    @endforeach
+  </div>
+</section>
 @endsection
