@@ -9,7 +9,13 @@
 </head>
 
 <body>
+    <header>
+      @include('layout.header')
+    </header>
     @yield('content')
+    <footer>
+      @include('layout.footer')
+    </footer>
 </body>
 
 </html>

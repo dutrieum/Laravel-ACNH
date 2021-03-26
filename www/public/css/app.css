@@ -85,6 +85,11 @@ table {
   border-radius: 50px;
   text-align: center;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.bugs .multiple div:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 .bugs .multiple div h2 {
   font-family: "Arvo", serif;
@@ -103,14 +108,15 @@ table {
   padding: 0 100px;
 }
 .bug h1 {
-  font-size: 42px;
+  font-size: 38px;
   text-align: center;
   font-family: "Arvo", serif;
   font-weight: 700;
-  margin: 30px;
+  margin: 45px;
 }
 .bug .content {
   margin-top: 5%;
+  margin-bottom: 3%;
   display: flex;
   justify-content: space-around;
 }
@@ -150,4 +156,32 @@ table {
 body {
   background-image: url(/images/background.png?f7741bd2c5fcbd6897515e1e01f700ae);
   font-family: "Open Sans", sans-serif;
+}
+
+header {
+  text-align: center;
+  background-image: url(/images/green-background.jpg?6905d72b0984b7fb3c5ef378fd51f942);
+  background-size: 24%;
+}
+header img {
+  width: 22%;
+  transition: all 0.3s ease-in-out;
+}
+header img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  background-color: #EDD8BA;
+  text-align: center;
+  color: white;
+  font-family: "Arvo", serif;
+}
+footer .credits {
+  padding: 3%;
+}
+footer .credits p {
+  font-size: 20px;
+  margin-top: 15px;
 }

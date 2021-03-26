@@ -14,10 +14,6 @@ use App\Http\Controllers\BugController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/bugs', [BugController::class, 'bugs']);
+Route::get('/', [BugController::class, 'bugs'])->name('bugs');
 
 Route::get('/bugs/{id}', [BugController::class, 'bug'])->name('bug');

@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    background-image: url(../images/green-background.jpg);
+    background-size: 24%;
+
+    img {
+        width: 22%;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}

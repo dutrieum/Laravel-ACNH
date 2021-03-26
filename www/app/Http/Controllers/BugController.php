@@ -29,7 +29,6 @@ class BugController extends Controller
         echo "cURL Error #:" . $err;
       } else {
         $response = json_decode($response);
-        //dd($response);
       }
 
       return view('pages.bugs', [

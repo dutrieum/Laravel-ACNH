@@ -1,0 +1,1 @@
+<a href="{{ route('bugs') }}"><img src="{{ asset('images/logo-ac.png') }}" alt="ACNH logo"></a>
